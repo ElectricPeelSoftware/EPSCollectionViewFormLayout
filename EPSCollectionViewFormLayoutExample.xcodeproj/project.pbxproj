@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D023124818B2681700C22B4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D023124718B2681700C22B4E /* Foundation.framework */; };
+		D023124A18B2681700C22B4E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D023124918B2681700C22B4E /* CoreGraphics.framework */; };
+		D023124C18B2681700C22B4E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D023124B18B2681700C22B4E /* UIKit.framework */; };
+		D023125218B2681700C22B4E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D023125018B2681700C22B4E /* InfoPlist.strings */; };
+		D023125418B2681700C22B4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D023125318B2681700C22B4E /* main.m */; };
+		D023125818B2681700C22B4E /* EPSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D023125718B2681700C22B4E /* EPSAppDelegate.m */; };
+		D023126018B2681700C22B4E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D023125F18B2681700C22B4E /* Images.xcassets */; };
+		D023126718B2681700C22B4E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D023126618B2681700C22B4E /* XCTest.framework */; };
+		D023126818B2681700C22B4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D023124718B2681700C22B4E /* Foundation.framework */; };
+		D023126918B2681700C22B4E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D023124B18B2681700C22B4E /* UIKit.framework */; };
+		D023127118B2681700C22B4E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D023126F18B2681700C22B4E /* InfoPlist.strings */; };
+		D023127318B2681700C22B4E /* EPSCollectionViewFormLayoutExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D023127218B2681700C22B4E /* EPSCollectionViewFormLayoutExampleTests.m */; };
+		D023127E18B2686A00C22B4E /* EPSExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D023127D18B2686A00C22B4E /* EPSExampleViewController.m */; };
+		D023128118B26A9800C22B4E /* EPSCollectionViewFormLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D023128018B26A9800C22B4E /* EPSCollectionViewFormLayout.m */; };
+		D023128418B275E500C22B4E /* EPSTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D023128318B275E500C22B4E /* EPSTextFieldCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D023126A18B2681700C22B4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D023123C18B2681700C22B4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D023124318B2681700C22B4E;
+			remoteInfo = EPSCollectionViewFormLayoutExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D023124418B2681700C22B4E /* EPSCollectionViewFormLayoutExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EPSCollectionViewFormLayoutExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D023124718B2681700C22B4E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D023124918B2681700C22B4E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D023124B18B2681700C22B4E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D023124F18B2681700C22B4E /* EPSCollectionViewFormLayoutExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EPSCollectionViewFormLayoutExample-Info.plist"; sourceTree = "<group>"; };
+		D023125118B2681700C22B4E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D023125318B2681700C22B4E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D023125518B2681700C22B4E /* EPSCollectionViewFormLayoutExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EPSCollectionViewFormLayoutExample-Prefix.pch"; sourceTree = "<group>"; };
+		D023125618B2681700C22B4E /* EPSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EPSAppDelegate.h; sourceTree = "<group>"; };
+		D023125718B2681700C22B4E /* EPSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPSAppDelegate.m; sourceTree = "<group>"; };
+		D023125F18B2681700C22B4E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D023126518B2681700C22B4E /* EPSCollectionViewFormLayoutExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EPSCollectionViewFormLayoutExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D023126618B2681700C22B4E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D023126E18B2681700C22B4E /* EPSCollectionViewFormLayoutExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EPSCollectionViewFormLayoutExampleTests-Info.plist"; sourceTree = "<group>"; };
+		D023127018B2681700C22B4E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D023127218B2681700C22B4E /* EPSCollectionViewFormLayoutExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPSCollectionViewFormLayoutExampleTests.m; sourceTree = "<group>"; };
+		D023127C18B2686A00C22B4E /* EPSExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPSExampleViewController.h; sourceTree = "<group>"; };
+		D023127D18B2686A00C22B4E /* EPSExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPSExampleViewController.m; sourceTree = "<group>"; };
+		D023127F18B26A9800C22B4E /* EPSCollectionViewFormLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPSCollectionViewFormLayout.h; sourceTree = "<group>"; };
+		D023128018B26A9800C22B4E /* EPSCollectionViewFormLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPSCollectionViewFormLayout.m; sourceTree = "<group>"; };
+		D023128218B275E500C22B4E /* EPSTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPSTextFieldCell.h; sourceTree = "<group>"; };
+		D023128318B275E500C22B4E /* EPSTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPSTextFieldCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D023124118B2681700C22B4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D023124A18B2681700C22B4E /* CoreGraphics.framework in Frameworks */,
+				D023124C18B2681700C22B4E /* UIKit.framework in Frameworks */,
+				D023124818B2681700C22B4E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D023126218B2681700C22B4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D023126718B2681700C22B4E /* XCTest.framework in Frameworks */,
+				D023126918B2681700C22B4E /* UIKit.framework in Frameworks */,
+				D023126818B2681700C22B4E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D023123B18B2681700C22B4E = {
+			isa = PBXGroup;
+			children = (
+				D023124D18B2681700C22B4E /* EPSCollectionViewFormLayoutExample */,
+				D023126C18B2681700C22B4E /* EPSCollectionViewFormLayoutExampleTests */,
+				D023124618B2681700C22B4E /* Frameworks */,
+				D023124518B2681700C22B4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D023124518B2681700C22B4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D023124418B2681700C22B4E /* EPSCollectionViewFormLayoutExample.app */,
+				D023126518B2681700C22B4E /* EPSCollectionViewFormLayoutExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D023124618B2681700C22B4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D023124718B2681700C22B4E /* Foundation.framework */,
+				D023124918B2681700C22B4E /* CoreGraphics.framework */,
+				D023124B18B2681700C22B4E /* UIKit.framework */,
+				D023126618B2681700C22B4E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D023124D18B2681700C22B4E /* EPSCollectionViewFormLayoutExample */ = {
+			isa = PBXGroup;
+			children = (
+				D023125618B2681700C22B4E /* EPSAppDelegate.h */,
+				D023125718B2681700C22B4E /* EPSAppDelegate.m */,
+				D023127C18B2686A00C22B4E /* EPSExampleViewController.h */,
+				D023127D18B2686A00C22B4E /* EPSExampleViewController.m */,
+				D023127F18B26A9800C22B4E /* EPSCollectionViewFormLayout.h */,
+				D023128018B26A9800C22B4E /* EPSCollectionViewFormLayout.m */,
+				D023128218B275E500C22B4E /* EPSTextFieldCell.h */,
+				D023128318B275E500C22B4E /* EPSTextFieldCell.m */,
+				D023124E18B2681700C22B4E /* Supporting Files */,
+			);
+			path = EPSCollectionViewFormLayoutExample;
+			sourceTree = "<group>";
+		};
+		D023124E18B2681700C22B4E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D023125F18B2681700C22B4E /* Images.xcassets */,
+				D023124F18B2681700C22B4E /* EPSCollectionViewFormLayoutExample-Info.plist */,
+				D023125018B2681700C22B4E /* InfoPlist.strings */,
+				D023125318B2681700C22B4E /* main.m */,
+				D023125518B2681700C22B4E /* EPSCollectionViewFormLayoutExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D023126C18B2681700C22B4E /* EPSCollectionViewFormLayoutExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				D023127218B2681700C22B4E /* EPSCollectionViewFormLayoutExampleTests.m */,
+				D023126D18B2681700C22B4E /* Supporting Files */,
+			);
+			path = EPSCollectionViewFormLayoutExampleTests;
+			sourceTree = "<group>";
+		};
+		D023126D18B2681700C22B4E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D023126E18B2681700C22B4E /* EPSCollectionViewFormLayoutExampleTests-Info.plist */,
+				D023126F18B2681700C22B4E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D023124318B2681700C22B4E /* EPSCollectionViewFormLayoutExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D023127618B2681700C22B4E /* Build configuration list for PBXNativeTarget "EPSCollectionViewFormLayoutExample" */;
+			buildPhases = (
+				D023124018B2681700C22B4E /* Sources */,
+				D023124118B2681700C22B4E /* Frameworks */,
+				D023124218B2681700C22B4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EPSCollectionViewFormLayoutExample;
+			productName = EPSCollectionViewFormLayoutExample;
+			productReference = D023124418B2681700C22B4E /* EPSCollectionViewFormLayoutExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D023126418B2681700C22B4E /* EPSCollectionViewFormLayoutExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D023127918B2681700C22B4E /* Build configuration list for PBXNativeTarget "EPSCollectionViewFormLayoutExampleTests" */;
+			buildPhases = (
+				D023126118B2681700C22B4E /* Sources */,
+				D023126218B2681700C22B4E /* Frameworks */,
+				D023126318B2681700C22B4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D023126B18B2681700C22B4E /* PBXTargetDependency */,
+			);
+			name = EPSCollectionViewFormLayoutExampleTests;
+			productName = EPSCollectionViewFormLayoutExampleTests;
+			productReference = D023126518B2681700C22B4E /* EPSCollectionViewFormLayoutExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D023123C18B2681700C22B4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EPS;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Electric Peel";
+				TargetAttributes = {
+					D023126418B2681700C22B4E = {
+						TestTargetID = D023124318B2681700C22B4E;
+					};
+				};
+			};
+			buildConfigurationList = D023123F18B2681700C22B4E /* Build configuration list for PBXProject "EPSCollectionViewFormLayoutExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D023123B18B2681700C22B4E;
+			productRefGroup = D023124518B2681700C22B4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D023124318B2681700C22B4E /* EPSCollectionViewFormLayoutExample */,
+				D023126418B2681700C22B4E /* EPSCollectionViewFormLayoutExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D023124218B2681700C22B4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D023126018B2681700C22B4E /* Images.xcassets in Resources */,
+				D023125218B2681700C22B4E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D023126318B2681700C22B4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D023127118B2681700C22B4E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D023124018B2681700C22B4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D023125418B2681700C22B4E /* main.m in Sources */,
+				D023128118B26A9800C22B4E /* EPSCollectionViewFormLayout.m in Sources */,
+				D023127E18B2686A00C22B4E /* EPSExampleViewController.m in Sources */,
+				D023125818B2681700C22B4E /* EPSAppDelegate.m in Sources */,
+				D023128418B275E500C22B4E /* EPSTextFieldCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D023126118B2681700C22B4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D023127318B2681700C22B4E /* EPSCollectionViewFormLayoutExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D023126B18B2681700C22B4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D023124318B2681700C22B4E /* EPSCollectionViewFormLayoutExample */;
+			targetProxy = D023126A18B2681700C22B4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D023125018B2681700C22B4E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D023125118B2681700C22B4E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D023126F18B2681700C22B4E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D023127018B2681700C22B4E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D023127418B2681700C22B4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D023127518B2681700C22B4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D023127718B2681700C22B4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EPSCollectionViewFormLayoutExample/EPSCollectionViewFormLayoutExample-Prefix.pch";
+				INFOPLIST_FILE = "EPSCollectionViewFormLayoutExample/EPSCollectionViewFormLayoutExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D023127818B2681700C22B4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EPSCollectionViewFormLayoutExample/EPSCollectionViewFormLayoutExample-Prefix.pch";
+				INFOPLIST_FILE = "EPSCollectionViewFormLayoutExample/EPSCollectionViewFormLayoutExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D023127A18B2681700C22B4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EPSCollectionViewFormLayoutExample.app/EPSCollectionViewFormLayoutExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EPSCollectionViewFormLayoutExample/EPSCollectionViewFormLayoutExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "EPSCollectionViewFormLayoutExampleTests/EPSCollectionViewFormLayoutExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D023127B18B2681700C22B4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EPSCollectionViewFormLayoutExample.app/EPSCollectionViewFormLayoutExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EPSCollectionViewFormLayoutExample/EPSCollectionViewFormLayoutExample-Prefix.pch";
+				INFOPLIST_FILE = "EPSCollectionViewFormLayoutExampleTests/EPSCollectionViewFormLayoutExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D023123F18B2681700C22B4E /* Build configuration list for PBXProject "EPSCollectionViewFormLayoutExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D023127418B2681700C22B4E /* Debug */,
+				D023127518B2681700C22B4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D023127618B2681700C22B4E /* Build configuration list for PBXNativeTarget "EPSCollectionViewFormLayoutExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D023127718B2681700C22B4E /* Debug */,
+				D023127818B2681700C22B4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D023127918B2681700C22B4E /* Build configuration list for PBXNativeTarget "EPSCollectionViewFormLayoutExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D023127A18B2681700C22B4E /* Debug */,
+				D023127B18B2681700C22B4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D023123C18B2681700C22B4E /* Project object */;
+}
