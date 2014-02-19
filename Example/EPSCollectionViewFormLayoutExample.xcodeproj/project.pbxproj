@@ -53,10 +53,10 @@
 		D023127218B2681700C22B4E /* EPSCollectionViewFormLayoutExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPSCollectionViewFormLayoutExampleTests.m; sourceTree = "<group>"; };
 		D023127C18B2686A00C22B4E /* EPSExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPSExampleViewController.h; sourceTree = "<group>"; };
 		D023127D18B2686A00C22B4E /* EPSExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPSExampleViewController.m; sourceTree = "<group>"; };
-		D023127F18B26A9800C22B4E /* EPSCollectionViewFormLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPSCollectionViewFormLayout.h; sourceTree = "<group>"; };
-		D023128018B26A9800C22B4E /* EPSCollectionViewFormLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPSCollectionViewFormLayout.m; sourceTree = "<group>"; };
-		D023128218B275E500C22B4E /* EPSTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPSTextFieldCell.h; sourceTree = "<group>"; };
-		D023128318B275E500C22B4E /* EPSTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPSTextFieldCell.m; sourceTree = "<group>"; };
+		D023127F18B26A9800C22B4E /* EPSCollectionViewFormLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EPSCollectionViewFormLayout.h; path = ../EPSCollectionViewFormLayout/EPSCollectionViewFormLayout.h; sourceTree = SOURCE_ROOT; };
+		D023128018B26A9800C22B4E /* EPSCollectionViewFormLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EPSCollectionViewFormLayout.m; path = ../EPSCollectionViewFormLayout/EPSCollectionViewFormLayout.m; sourceTree = SOURCE_ROOT; };
+		D023128218B275E500C22B4E /* EPSTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EPSTextFieldCell.h; path = ../EPSCollectionViewFormLayout/EPSTextFieldCell.h; sourceTree = SOURCE_ROOT; };
+		D023128318B275E500C22B4E /* EPSTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EPSTextFieldCell.m; path = ../EPSCollectionViewFormLayout/EPSTextFieldCell.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,14 +116,11 @@
 		D023124D18B2681700C22B4E /* EPSCollectionViewFormLayoutExample */ = {
 			isa = PBXGroup;
 			children = (
+				D0E3C6EF18B556FC00715B2A /* EPSCollectionViewFormLayout */,
 				D023125618B2681700C22B4E /* EPSAppDelegate.h */,
 				D023125718B2681700C22B4E /* EPSAppDelegate.m */,
 				D023127C18B2686A00C22B4E /* EPSExampleViewController.h */,
 				D023127D18B2686A00C22B4E /* EPSExampleViewController.m */,
-				D023127F18B26A9800C22B4E /* EPSCollectionViewFormLayout.h */,
-				D023128018B26A9800C22B4E /* EPSCollectionViewFormLayout.m */,
-				D023128218B275E500C22B4E /* EPSTextFieldCell.h */,
-				D023128318B275E500C22B4E /* EPSTextFieldCell.m */,
 				D023124E18B2681700C22B4E /* Supporting Files */,
 			);
 			path = EPSCollectionViewFormLayoutExample;
@@ -157,6 +154,17 @@
 				D023126F18B2681700C22B4E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0E3C6EF18B556FC00715B2A /* EPSCollectionViewFormLayout */ = {
+			isa = PBXGroup;
+			children = (
+				D023127F18B26A9800C22B4E /* EPSCollectionViewFormLayout.h */,
+				D023128018B26A9800C22B4E /* EPSCollectionViewFormLayout.m */,
+				D023128218B275E500C22B4E /* EPSTextFieldCell.h */,
+				D023128318B275E500C22B4E /* EPSTextFieldCell.m */,
+			);
+			name = EPSCollectionViewFormLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

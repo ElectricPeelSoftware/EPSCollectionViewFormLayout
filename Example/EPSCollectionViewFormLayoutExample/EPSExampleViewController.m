@@ -25,7 +25,7 @@ NSString * const EPSExampleViewControllerCellIdentifier = @"EPSExampleViewContro
     self = [super initWithCollectionViewLayout:layout];
     if (self == nil) return nil;
     
-    self.title = @"Form Layout";
+    self.title = @"Form Layout Example";
     
     return self;
 }

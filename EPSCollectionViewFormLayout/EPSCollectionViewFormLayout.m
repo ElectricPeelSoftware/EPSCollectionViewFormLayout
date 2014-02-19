@@ -123,16 +123,6 @@ NSString * const EPSCollectionViewFormLayoutDecorationViewKind = @"EPSCollection
     return [self.delegate collectionView:self.collectionView layout:self heightForSectionAtIndex:section];
 }
 
-- (CGFloat)widthForItemAtIndexPath:(NSIndexPath *)indexPath {
-    CGFloat totalWidth = CGRectGetWidth(self.collectionView.frame) - ([self.collectionView numberOfItemsInSection:indexPath.section] - 1) * self.cellSpacing;
-    CGFloat width = floorf(totalWidth * [self.delegate collectionView:self.collectionView layout:self relativeWidthOfItemAtIndexPath:indexPath]);
-    return width;
-}
-
-- (id <EPSCollectionViewFormLayoutDelegate>)delegate {
-    return (id <EPSCollectionViewFormLayoutDelegate>)self.collectionView.delegate;
-}
-
 - (CGFloat)xOriginForItemAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.item == 0) return 0;
     
@@ -141,6 +131,16 @@ NSString * const EPSCollectionViewFormLayoutDecorationViewKind = @"EPSCollection
     CGFloat widthOfPreviousItem = [self widthForItemAtIndexPath:previousIndexPath];
     
     return xOriginOfPreviousItem + widthOfPreviousItem + self.cellSpacing;
+}
+
+- (CGFloat)widthForItemAtIndexPath:(NSIndexPath *)indexPath {
+    CGFloat totalWidth = CGRectGetWidth(self.collectionView.frame) - ([self.collectionView numberOfItemsInSection:indexPath.section] - 1) * self.cellSpacing;
+    CGFloat width = floorf(totalWidth * [self.delegate collectionView:self.collectionView layout:self relativeWidthOfItemAtIndexPath:indexPath]);
+    return width;
+}
+
+- (id <EPSCollectionViewFormLayoutDelegate>)delegate {
+    return (id <EPSCollectionViewFormLayoutDelegate>)self.collectionView.delegate;
 }
 
 @end
