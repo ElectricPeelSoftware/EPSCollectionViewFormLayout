@@ -2,7 +2,7 @@
 
 `EPSCollectionViewFormLayout` is a subclass of `UICollectionViewLayout` that makes it easy to layout forms, like login and address forms, in a collection view.
 
-![Address Example](https://raw.github.com/ElectricPeelSoftware/EPSCollectionViewFormLayout/Assets/AddressExample.png)
+![Address Example](https://raw.github.com/ElectricPeelSoftware/EPSCollectionViewFormLayout/master/Assets/AddressExample.png)
 
 For an example of how to use `EPSCollectionViewFormLayout`, see the [example project](https://github.com/ElectricPeelSoftware/EPSCollectionViewFormLayout/tree/master/Example).
 
