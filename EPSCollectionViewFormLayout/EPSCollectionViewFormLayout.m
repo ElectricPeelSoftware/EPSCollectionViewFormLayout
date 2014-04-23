@@ -20,7 +20,7 @@ NSString * const EPSCollectionViewFormLayoutDecorationViewKind = @"EPSCollection
     self = [super initWithFrame:frame];
     if (self == nil) return nil;
     
-    self.backgroundColor = [UIColor colorWithWhite:0 alpha:0.1];
+    self.backgroundColor = [UIColor colorWithWhite:0.8 alpha:1];
     
     return self;
 }
@@ -67,12 +67,13 @@ NSString * const EPSCollectionViewFormLayoutDecorationViewKind = @"EPSCollection
                 [layoutAttributes addObject:layoutAttribute];
             }
         }
+        
+        UICollectionViewLayoutAttributes *decorationAttribute = [self layoutAttributesForDecorationViewOfKind:EPSCollectionViewFormLayoutDecorationViewKind atIndexPath:[NSIndexPath indexPathForItem:0 inSection:section]];
+        if (CGRectIntersectsRect(rect, decorationAttribute.frame)) {
+            [layoutAttributes addObject:decorationAttribute];
+        }
     }
     
-    UICollectionViewLayoutAttributes *decorationAttribute = [self layoutAttributesForDecorationViewOfKind:EPSCollectionViewFormLayoutDecorationViewKind atIndexPath:[NSIndexPath indexPathForItem:0 inSection:0]];
-    if (CGRectIntersectsRect(rect, decorationAttribute.frame)) {
-        [layoutAttributes addObject:decorationAttribute];
-    }
     
     return layoutAttributes;
 }
@@ -96,7 +97,13 @@ NSString * const EPSCollectionViewFormLayoutDecorationViewKind = @"EPSCollection
 - (UICollectionViewLayoutAttributes *)layoutAttributesForDecorationViewOfKind:(NSString *)decorationViewKind atIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForDecorationViewOfKind:EPSCollectionViewFormLayoutDecorationViewKind withIndexPath:indexPath];
     
-    attributes.frame = CGRectMake(0, -1, [self collectionViewContentSize].width, [self collectionViewContentSize].height + 1);
+    CGRect frame;
+    frame.origin.x = 0;
+    frame.origin.y = [self yOriginForSection:indexPath.section] - self.cellSpacing;
+    frame.size.width = CGRectGetWidth(self.collectionView.frame);
+    frame.size.height = [self heightForSection:indexPath.section] + 2 * self.cellSpacing;
+    
+    attributes.frame = frame;
     
     return attributes;
 }
@@ -115,12 +122,22 @@ NSString * const EPSCollectionViewFormLayoutDecorationViewKind = @"EPSCollection
     NSInteger previousSection = section - 1;
     CGFloat yOriginOfPreviousSection = [self yOriginForSection:previousSection];
     CGFloat heightOfPreviousSection = [self heightForSection:previousSection];
+    CGFloat spacingBelowPreviousSection = [self spacingBelowSection:previousSection];
     
-    return yOriginOfPreviousSection + heightOfPreviousSection + self.cellSpacing;
+    return yOriginOfPreviousSection + heightOfPreviousSection + spacingBelowPreviousSection + self.cellSpacing;
 }
 
 - (CGFloat)heightForSection:(NSInteger)section {
     return [self.delegate collectionView:self.collectionView layout:self heightForSectionAtIndex:section];
+}
+
+- (CGFloat)spacingBelowSection:(NSInteger)section {
+    if ([self.delegate respondsToSelector:@selector(collectionView:layout:spacingBelowSection:)]) {
+        return [self.delegate collectionView:self.collectionView layout:self spacingBelowSection:section];
+    }
+    else {
+        return 0;
+    }
 }
 
 - (CGFloat)xOriginForItemAtIndexPath:(NSIndexPath *)indexPath {
