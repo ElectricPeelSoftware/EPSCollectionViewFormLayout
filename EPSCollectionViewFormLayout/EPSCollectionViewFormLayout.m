@@ -109,7 +109,7 @@ NSString * const EPSCollectionViewFormLayoutDecorationViewKind = @"EPSCollection
 }
 
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds {
-    return NO;
+    return YES;
 }
 
 #pragma mark -
