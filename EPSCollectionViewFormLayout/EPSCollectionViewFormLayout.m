@@ -68,6 +68,12 @@ NSString * const EPSCollectionViewFormLayoutDecorationViewKind = @"EPSCollection
             }
         }
         
+        UICollectionViewLayoutAttributes *attributes = [self layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionFooter atIndexPath:[NSIndexPath indexPathForItem:0 inSection:section]];
+        
+        if (attributes != nil && CGRectIntersectsRect(rect, attributes.frame)) {
+            [layoutAttributes addObject:attributes];
+        }
+        
         UICollectionViewLayoutAttributes *decorationAttribute = [self layoutAttributesForDecorationViewOfKind:EPSCollectionViewFormLayoutDecorationViewKind atIndexPath:[NSIndexPath indexPathForItem:0 inSection:section]];
         if (CGRectIntersectsRect(rect, decorationAttribute.frame)) {
             [layoutAttributes addObject:decorationAttribute];
@@ -108,6 +114,25 @@ NSString * const EPSCollectionViewFormLayoutDecorationViewKind = @"EPSCollection
     return attributes;
 }
 
+- (UICollectionViewLayoutAttributes *)layoutAttributesForSupplementaryViewOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+    if ([self.delegate respondsToSelector:@selector(collectionView:layout:referenceHeightForFooterInSection:)] == NO) return nil;
+    
+    CGFloat height = [self.delegate collectionView:self.collectionView layout:self referenceHeightForFooterInSection:indexPath.section];
+    if (height == 0) return nil;
+    
+    UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForSupplementaryViewOfKind:kind withIndexPath:indexPath];
+    
+    CGRect frame;
+    frame.origin.x = 0;
+    frame.origin.y = [self yOriginForSection:indexPath.section] + [self heightForSection:indexPath.section];
+    frame.size.width = CGRectGetWidth(self.collectionView.frame);
+    frame.size.height = height;
+    
+    attributes.frame = frame;
+    
+    return attributes;
+}
+
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds {
     return YES;
 }
@@ -124,7 +149,11 @@ NSString * const EPSCollectionViewFormLayoutDecorationViewKind = @"EPSCollection
     CGFloat heightOfPreviousSection = [self heightForSection:previousSection];
     CGFloat spacingBelowPreviousSection = [self spacingBelowSection:previousSection];
     
-    return yOriginOfPreviousSection + heightOfPreviousSection + spacingBelowPreviousSection + self.cellSpacing;
+    CGFloat heightOfFooter = 0;
+    if ([self.delegate respondsToSelector:@selector(collectionView:layout:referenceHeightForFooterInSection:)] && section > 0) {
+        heightOfFooter = [self.delegate collectionView:self.collectionView layout:self referenceHeightForFooterInSection:section - 1];
+    }
+    return yOriginOfPreviousSection + heightOfPreviousSection + spacingBelowPreviousSection + heightOfFooter + self.cellSpacing;
 }
 
 - (CGFloat)heightForSection:(NSInteger)section {

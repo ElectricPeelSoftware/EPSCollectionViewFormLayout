@@ -22,6 +22,9 @@
 /// @returns The amount of space underneath a section (which appears as a row), corresponding to \c section.
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout spacingBelowSection:(NSInteger)section;
 
+/// @returns The height of the footer. If you return a height of 0, no footer is added.
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceHeightForFooterInSection:(NSInteger)section;
+
 @end
 
 @interface EPSCollectionViewFormLayout : UICollectionViewLayout
